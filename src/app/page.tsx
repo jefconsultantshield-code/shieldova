@@ -4,6 +4,8 @@ import Solutions from "@/components/Solutions";
 import Testimonials from "@/components/Testimonials";
 import Partners from "@/components/Partners";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
+import Resources from "@/components/Resources";
 
 export default function Home() {
   return (
@@ -41,6 +43,12 @@ export default function Home() {
 
       {/* CTA Final */}
       <CTA />
+
+      {/* Recursos */}
+      <Resources />
+
+      {/* Footer */}
+      <Footer />
 
       {/* Placeholder del contenido restante */}
       <main className="p-8 text-center">
