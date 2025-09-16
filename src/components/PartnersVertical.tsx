@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import partners from "@/data/partners.json";
 
-export default function Partners() {
+export default function PartnersVertical() {
   return (
     <section className="py-20 px-6 bg-gray-100 relative overflow-hidden">
       <div className="max-w-6xl mx-auto text-center mb-12">
@@ -10,16 +10,16 @@ export default function Partners() {
           Con la confianza de empresas líderes
         </h2>
         <p className="text-gray-600 mt-4">
-          Aliados estratégicos y clientes que respaldan la efectividad de nuestras soluciones.
+          Alianzas estratégicas que validan la efectividad de nuestras soluciones.
         </p>
       </div>
 
-      {/* Carrusel horizontal */}
-      <div className="relative w-full overflow-hidden">
+      {/* Carrusel vertical */}
+      <div className="relative h-64 overflow-hidden flex items-center justify-center">
         <motion.div
-          className="flex space-x-12"
-          initial={{ x: 0 }}
-          animate={{ x: ["0%", "-100%"] }}
+          className="flex flex-col space-y-8"
+          initial={{ y: 0 }}
+          animate={{ y: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
             duration: 20,
@@ -28,8 +28,8 @@ export default function Partners() {
         >
           {[...partners, ...partners].map((partner) => (
             <div
-              key={partner.id + "-h"}
-              className="flex items-center justify-center w-32 h-16 bg-white rounded-lg shadow-sm"
+              key={partner.id + "-v"}
+              className="flex items-center justify-center w-40 h-16 bg-white rounded-lg shadow-sm"
             >
               <img
                 src={partner.logo}

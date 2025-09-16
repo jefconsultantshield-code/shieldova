@@ -1,34 +1,51 @@
-// ✅ Importaciones completas
+"use client";
+
 import Navbar from "@/components/Navbar";
 import Solutions from "@/components/Solutions";
 import Testimonials from "@/components/Testimonials";
 import Partners from "@/components/Partners";
+import Clients from "@/components/Clients";
+import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
 import Resources from "@/components/Resources";
+import Contact from "@/components/Contact";
+import ResourcesHighlight from "@/components/ResourcesHighlight";
+import Team from "@/components/Team";
+import SuccessStory from "@/components/SuccessStory"; // Importación del caso de éxito
+import FAQ from "@/components/FAQ";                   // Importación de preguntas frecuentes
+import Newsletter from "@/components/Newsletter";     // Importación del newsletter
+import PopupCTA from "@/components/PopupCTA";         // Importación del pop-up
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-sans antialiased text-gray-900">
       {/* Barra de navegación */}
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Soluciones de Seguridad Digital Modernas
+      <section className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-32 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            ShieldOps: Ciberseguridad para PYMEs
           </h1>
-          <p className="text-lg md:text-xl mb-8">
-            Protege tu empresa con herramientas fáciles de usar, escalables y confiables. 
-            Este sitio es un ejemplo educativo inspirado en Palo Alto Networks.
+          <p className="mt-6 text-lg md:text-xl text-blue-100">
+            Protege tu negocio con soluciones simples, efectivas y accesibles.
           </p>
-          <a
-            href="/soluciones"
-            className="inline-block bg-white text-blue-700 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition"
-          >
-            Ver Soluciones
-          </a>
+          <div className="mt-8 flex justify-center space-x-4">
+            <a
+              href="#solutions"
+              className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
+            >
+              Ver Soluciones
+            </a>
+            <a
+              href="#contact"
+              className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition"
+            >
+              Contáctanos
+            </a>
+          </div>
         </div>
       </section>
 
@@ -38,25 +55,44 @@ export default function Home() {
       {/* Testimonios */}
       <Testimonials />
 
-      {/* Partners */}
+      {/* Partners (tecnológicos + aliados) */}
       <Partners />
 
-      {/* CTA Final */}
+      {/* Clientes (PYMEs ficticias) */}
+      <Clients />
+
+      {/* Estadísticas de impacto */}
+      <Stats />
+
+      {/* Llamado a la acción con animación */}
       <CTA />
 
-      {/* Recursos */}
+      {/* Recursos dinámicos */}
       <Resources />
+
+      {/* Contacto */}
+      <Contact />
+
+      {/* Recursos prácticos para PYMEs */}
+      <ResourcesHighlight />
+
+      {/* Equipo de expertos */}
+      <Team />
+
+      {/* Caso de éxito */}
+      <SuccessStory />   {/* 👈 Caso de éxito */}
+
+      {/* Preguntas frecuentes */}
+      <FAQ />            {/* 👈 Preguntas frecuentes */}
+
+      {/* Newsletter */}
+      <Newsletter />      {/* 👈 Newsletter */}
 
       {/* Footer */}
       <Footer />
 
-      {/* Placeholder del contenido restante */}
-      <main className="p-8 text-center">
-        <h2 className="text-2xl font-semibold mb-4">Contenido de la página</h2>
-        <p>
-          Aquí iremos agregando secciones como recursos, contacto y más.
-        </p>
-      </main>
+      {/* Pop-up aparece sobre todo */}
+      <PopupCTA />        {/* 👈 Pop-up */}
     </div>
   );
 }

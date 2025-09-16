@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "category": "Tendencias",
+    "title": "Nuevas amenazas en 2025",
+    "description": "Un resumen de las principales amenazas emergentes en ciberseguridad este año.",
+    "date": "2025-09-13",
+    "link": "https://example.com/articulo1"
+  },
+  {
+    "id": 2,
+    "category": "Recursos",
+    "title": "Guía de buenas prácticas",
+    "description": "Descubre cómo proteger tu empresa frente a ataques comunes.",
+    "date": "2025-08-30",
+    "link": "https://example.com/articulo2"
+  }
+]

@@ -1,32 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
-const resources = [
-  {
-    id: 1,
-    title: "Guía: Zero Trust explicado fácil",
-    description: "Un vistazo práctico a cómo implementar el modelo Zero Trust en tu empresa.",
-    link: "#",
-    category: "Guía",
-    date: "12 Sept 2025"
-  },
-  {
-    id: 2,
-    title: "Webinar: Seguridad en la nube 2025",
-    description: "Conoce los principales retos y cómo prepararte para proteger datos en la nube.",
-    link: "#",
-    category: "Webinar",
-    date: "01 Sept 2025"
-  },
-  {
-    id: 3,
-    title: "Artículo: Automatización en ciberseguridad",
-    description: "Cómo los sistemas automatizados reducen tiempos de respuesta ante incidentes.",
-    link: "#",
-    category: "Artículo",
-    date: "28 Ago 2025"
-  }
-];
+import resources from "@/data/resources.json"; // Importa los recursos desde el archivo JSON
 
 export default function Resources() {
   return (

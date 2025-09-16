@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Banco Andino",
+    "logo": "https://dummyimage.com/140x40/0055aa/ffffff&text=Banco+Andino"
+  },
+  {
+    "id": 2,
+    "name": "Seguros VidaPlena",
+    "logo": "https://dummyimage.com/140x40/aa0033/ffffff&text=VidaPlena"
+  },
+  {
+    "id": 3,
+    "name": "RetailMax",
+    "logo": "https://dummyimage.com/140x40/006600/ffffff&text=RetailMax"
+  },
+  {
+    "id": 4,
+    "name": "GlobalTel",
+    "logo": "https://dummyimage.com/140x40/333333/ffffff&text=GlobalTel"
+  },
+  {
+    "id": 5,
+    "name": "FinanzasPlus",
+    "logo": "https://dummyimage.com/140x40/884400/ffffff&text=FinanzasPlus"
+  },
+  {
+    "id": 6,
+    "name": "HealthCareCo",
+    "logo": "https://dummyimage.com/140x40/007777/ffffff&text=HealthCareCo"
+  }
+]
