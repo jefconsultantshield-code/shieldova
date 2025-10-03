@@ -1,0 +1,29 @@
+﻿{
+    "tailwind":  null,
+    "summary":  null,
+    "nextConfig":  null,
+    "postcss":  null,
+    "projectPath":  "C:\\Users\\Andres Mauricio FQ\\palo-clone",
+    "findings":  {
+                     "filesWithMissingAlts":  {
+
+                                              },
+                     "hasSitemap":  true,
+                     "bigImages":  {
+
+                                   },
+                     "layoutFiles":  {
+
+                                     },
+                     "hasRobots":  true
+                 },
+    "package":  null,
+    "generated":  "2025-10-03T14:16:37.2947372-05:00",
+    "counts":  {
+                   "imgTags":  0,
+                   "imageComponents":  0,
+                   "codeFiles":  0,
+                   "publicImages":  0,
+                   "totalFiles":  null
+               }
+}

@@ -6,9 +6,9 @@ function log(...args: any[]) {
   console.log("[Navbar]", ...args);
   // almacena en ventana para inspección manual
   // @ts-ignore
-  window._shieldopsLogs = window._shieldopsLogs || [];
+  window._shieldovaLogs = window._shieldovaLogs || [];
   // @ts-ignore
-  window._shieldopsLogs.push({ time: new Date().toISOString(), args });
+  window._shieldovaLogs.push({ time: new Date().toISOString(), args });
 }
 
 function scrollToId(id: string) {
@@ -82,3 +82,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

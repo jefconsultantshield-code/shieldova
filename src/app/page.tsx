@@ -17,6 +17,7 @@ import Newsletter from "@/components/Newsletter";
 import Pricing from "@/components/Pricing";
 import PopupCTA from "@/components/PopupCTA";
 import Footer from "@/components/Footer";
+import ClientLogos from '@/components/ClientLogos';
 
 export default function Home() {
   return (
@@ -114,3 +115,4 @@ export default function Home() {
     </div>
   );
 }
+

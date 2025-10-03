@@ -1,38 +1,48 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shieldova.vercel.app"),
+   param($m) 
+    $url = $m.Groups[1].Value.ToLower()
+    return "metadataBase: new URL(`"$url`")"
+, // âœ… pon aquÃ­ tu dominio en Vercel
   title: "ShieldOva - Ciberseguridad para PYMEs",
-  description: "Protege tu negocio con soluciones avanzadas en ciberseguridad, Zero Trust, Cloud Security y más.",
-  keywords: ["ciberseguridad", "zero trust", "cloud security", "firewall", "shieldova"],
+  description:
+    "Protege tu negocio con ShieldOva: soluciones de ciberseguridad simples, efectivas y accesibles para pequeÃ±as y medianas empresas.",
+  keywords: [
+    "ciberseguridad",
+    "seguridad informÃ¡tica",
+    "protecciÃ³n de datos",
+    "ShieldOva",
+    "ciberseguridad para PYMEs",
+  ],
+  authors: [{ name: "ShieldOva", url: "https://ShieldOva.vercel.app" }],
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "ShieldOva | Ciberseguridad de Próxima Generación",
-    description: "Protege tu negocio con soluciones avanzadas en ciberseguridad.",
-    url: "https://shieldova.vercel.app",
-    siteName: "shieldova",
+    title: "ShieldOva - Ciberseguridad para PYMEs",
+    description:
+      "Protege tu negocio con ShieldOva: soluciones de ciberseguridad simples, efectivas y accesibles para pequeÃ±as y medianas empresas.",
+    url: "https://ShieldOva.vercel.app",
+    siteName: "ShieldOva",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.svg", // âœ… crea esta imagen en public/
         width: 1200,
         height: 630,
-        alt: "shieldova Seguridad"
-      }
+        alt: "ShieldOva - Seguridad para PYMEs",
+      },
     ],
-    locale: "es_ES",
+    locale: "es_CO",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ShieldOva | Ciberseguridad",
-    description: "Protege tu negocio con soluciones avanzadas en ciberseguridad.",
+    title: "ShieldOva - Ciberseguridad para PYMEs",
+    description:
+      "Protege tu negocio con ShieldOva: soluciones de ciberseguridad simples, efectivas y accesibles para pequeÃ±as y medianas empresas.",
     images: ["/og-image.svg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
@@ -64,6 +74,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
-

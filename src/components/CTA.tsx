@@ -1,26 +1,26 @@
-"use client";
+﻿"use client";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="relative py-20 px-6 bg-gradient-to-r from-indigo-700 to-blue-800 text-white overflow-hidden">
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">
-          Protege tu empresa hoy
+    <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center">
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          ¿Listo para llevar tu seguridad al siguiente nivel?
         </h2>
-        <p className="mb-8 text-blue-100 text-lg">
-          Solicita una demo gratuita y descubre cómo ShieldOva puede asegurar tu negocio en minutos.
+        <p className="mb-8 text-lg text-blue-100">
+          Protege tu empresa con soluciones de ciberseguridad de última
+          generación. Habla con uno de nuestros expertos hoy mismo.
         </p>
-        <a
-          href="#contact"
-          className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
-        >
-          Solicita una Demo
-        </a>
-      </div>
-
-      {/* Fondo decorativo (círculo animado tipo planeta) */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-96 h-96 bg-indigo-500 rounded-full opacity-20 animate-pulse"></div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link
+            href="/contact"
+            className="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition"
+          >
+            Habla con un experto
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

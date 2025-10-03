@@ -1,78 +1,61 @@
+﻿"use client";
+import { motion } from "framer-motion";
+
+const solutions = [
+  {
+    title: "Next-Gen Firewall",
+    desc: "Protección avanzada contra amenazas en la red.",
+    icon: "🛡️",
+  },
+  {
+    title: "Zero Trust Security",
+    desc: "Acceso seguro basado en identidad y contexto.",
+    icon: "🔒",
+  },
+  {
+    title: "Cloud Security",
+    desc: "Visibilidad y control en entornos multi-nube.",
+    icon: "☁️",
+  },
+  {
+    title: "Threat Intelligence",
+    desc: "Detección proactiva de amenazas y vulnerabilidades.",
+    icon: "⚡",
+  },
+  {
+    title: "Endpoint Protection",
+    desc: "Seguridad integral para dispositivos y usuarios.",
+    icon: "💻",
+  },
+  {
+    title: "SOC Automation",
+    desc: "Automatización inteligente para centros de operaciones.",
+    icon: "🤖",
+  },
+];
+
 export default function Solutions() {
   return (
-    <section className="py-20 px-6 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Nuestras Soluciones
         </h2>
-        <p className="text-gray-600 mt-4">
-          Herramientas clave para proteger tu organización en el mundo digital.
-        </p>
-      </div>
 
-      {/* Grid de Cards */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        
-        {/* Firewall */}
-        <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
-          <h3 className="text-xl font-semibold mb-3 text-blue-700">Firewall</h3>
-          <p className="text-gray-600 mb-4">
-            (Filtra el tráfico de red y bloquea accesos no autorizados). 
-            Es la primera línea de defensa entre tu red y el exterior.
-          </p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">Más info →</a>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {solutions.map((s, i) => (
+            <motion.div
+              key={i}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center"
+            >
+              <div className="text-5xl mb-4">{s.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
+              <p className="text-gray-600">{s.desc}</p>
+            </motion.div>
+          ))}
         </div>
-
-        {/* Seguridad en la Nube */}
-        <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
-          <h3 className="text-xl font-semibold mb-3 text-blue-700">Seguridad en la Nube</h3>
-          <p className="text-gray-600 mb-4">
-            (Protege datos y apps alojadas en plataformas cloud). 
-            Garantiza acceso seguro y cumplimiento de normativas.
-          </p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">Más info →</a>
-        </div>
-
-        {/* Zero Trust */}
-        <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
-          <h3 className="text-xl font-semibold mb-3 text-blue-700">Zero Trust</h3>
-          <p className="text-gray-600 mb-4">
-            (Nunca confíes, siempre verifica). 
-            Requiere autenticación constante y evita movimientos laterales en la red.
-          </p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">Más info →</a>
-        </div>
-
-        {/* Detección de Amenazas */}
-        <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
-          <h3 className="text-xl font-semibold mb-3 text-blue-700">Detección de Amenazas</h3>
-          <p className="text-gray-600 mb-4">
-            (Monitorea tráfico y actividad sospechosa). 
-            Identifica malware y ataques antes de que afecten el negocio.
-          </p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">Más info →</a>
-        </div>
-
-        {/* Seguridad de Endpoints */}
-        <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
-          <h3 className="text-xl font-semibold mb-3 text-blue-700">Seguridad de Endpoints</h3>
-          <p className="text-gray-600 mb-4">
-            (Protege dispositivos finales como laptops y móviles). 
-            Asegura que las amenazas sean detectadas y neutralizadas.
-          </p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">Más info →</a>
-        </div>
-
-        {/* Automatización */}
-        <div className="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition">
-          <h3 className="text-xl font-semibold mb-3 text-blue-700">Automatización</h3>
-          <p className="text-gray-600 mb-4">
-            (Responde automáticamente a incidentes). 
-            Reduce los tiempos de reacción y minimiza el impacto de los ataques.
-          </p>
-          <a href="#" className="text-blue-600 font-semibold hover:underline">Más info →</a>
-        </div>
-
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
@@ -7,18 +7,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://shieldova.vercel.app"),
   title: "ShieldOva - Ciberseguridad para PYMEs",
   description: "Protege tu negocio con soluciones avanzadas en ciberseguridad, Zero Trust, Cloud Security y más.",
-  keywords: ["ciberseguridad", "zero trust", "cloud security", "firewall", "shieldova"],
+  keywords: ["ciberseguridad", "zero trust", "cloud security", "firewall", "shieldops"],
   openGraph: {
     title: "ShieldOva | Ciberseguridad de Próxima Generación",
     description: "Protege tu negocio con soluciones avanzadas en ciberseguridad.",
     url: "https://shieldova.vercel.app",
-    siteName: "shieldova",
+    siteName: "ShieldOps",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "shieldova Seguridad"
+        alt: "ShieldOps Seguridad"
       }
     ],
     locale: "es_ES",
@@ -64,6 +64,4 @@ export default function RootLayout({
     </html>
   );
 }
-
-
 

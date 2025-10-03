@@ -1,78 +1,64 @@
+﻿"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const testimonials = [
+  {
+    name: "Carlos Ramírez",
+    role: "Director de TI",
+    image: "/testimonials/carlos.png",
+    quote:
+      "Con esta solución logramos blindar la seguridad de nuestra infraestructura crítica.",
+  },
+  {
+    name: "Laura Torres",
+    role: "CISO",
+    image: "/testimonials/laura.png",
+    quote:
+      "El enfoque Zero Trust nos permitió tener confianza en cada acceso y reducir riesgos.",
+  },
+  {
+    name: "Andrea López",
+    role: "Gerente de Seguridad",
+    image: "/testimonials/andrea.png",
+    quote:
+      "La protección en la nube fue clave para acelerar nuestra transformación digital.",
+  },
+];
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">
           Lo que dicen nuestros clientes
         </h2>
-        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-          Empresas y profesionales que confiaron en nuestras soluciones de ciberseguridad.
-        </p>
-      </div>
-
-      {/* Grid de testimonios */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        
-        {/* Testimonio 1 */}
-        <div className="bg-gray-50 shadow-md rounded-xl p-6 flex flex-col items-center text-center hover:shadow-xl transition">
-          <div className="relative w-20 h-20 mb-4">
-            <Image
-              src="/images/caballero.png"
-              alt="Carlos Ramírez"
-              fill
-              sizes="80px"
-              className="rounded-full object-cover"
-              priority
-            />
-          </div>
-          <h3 className="text-lg font-semibold text-gray-800">Carlos Ramírez</h3>
-          <p className="text-sm text-gray-500 mb-3">CTO en TechCol SAS</p>
-          <p className="text-gray-600">
-            "Gracias al enfoque Zero Trust, logramos reducir en un 70% los accesos no autorizados. 
-            Hoy tenemos control total sobre quién entra a nuestros sistemas."
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((t, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-50 shadow-md rounded-2xl p-6"
+            >
+              <div className="flex justify-center mb-4">
+                <div className="w-20 h-20 relative rounded-full overflow-hidden">
+                  <Image
+                    src={t.image}
+                    alt={t.name}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </div>
+              <p className="italic text-gray-700 mb-4">“{t.quote}”</p>
+              <h3 className="font-semibold text-lg">{t.name}</h3>
+              <span className="text-sm text-gray-500">{t.role}</span>
+            </motion.div>
+          ))}
         </div>
-
-        {/* Testimonio 2 */}
-        <div className="bg-gray-50 shadow-md rounded-xl p-6 flex flex-col items-center text-center hover:shadow-xl transition">
-          <div className="relative w-20 h-20 mb-4">
-            <Image
-              src="/images/caballero2.png"
-              alt="Francisco Geins"
-              fill
-              sizes="80px"
-              className="rounded-full object-cover"
-            />
-          </div>
-          <h3 className="text-lg font-semibold text-gray-800">Francisco Geins</h3>
-          <p className="text-sm text-gray-500 mb-3">Gerente de Operaciones en FinanciaYA</p>
-          <p className="text-gray-600">
-            "La seguridad en la nube nos dio confianza para migrar nuestras aplicaciones críticas. 
-            Sabemos que nuestros datos cumplen con normativas internacionales."
-          </p>
-        </div>
-
-        {/* Testimonio 3 */}
-        <div className="bg-gray-50 shadow-md rounded-xl p-6 flex flex-col items-center text-center hover:shadow-xl transition">
-          <div className="relative w-20 h-20 mb-4">
-            <Image
-              src="/images/dama2.png"
-              alt="Andrea López"
-              fill
-              sizes="80px"
-              className="rounded-full object-cover"
-            />
-          </div>
-          <h3 className="text-lg font-semibold text-gray-800">Andrea López</h3>
-          <p className="text-sm text-gray-500 mb-3">CEO en RetailExpress</p>
-          <p className="text-gray-600">
-            "La detección de amenazas en tiempo real fue clave para frenar intentos de ransomware. 
-            Ahora dormimos tranquilos sabiendo que tenemos monitoreo constante."
-          </p>
-        </div>
-
       </div>
     </section>
   );
