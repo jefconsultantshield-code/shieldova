@@ -24,7 +24,7 @@ export default function SuccessStory() {
           </h3>
           <p className="text-gray-600 mb-4">
             La empresa <strong>Panadería La Estrella</strong>, con 25 empleados en Bogotá,
-            sufría intentos de fraude por correos falsos. Con la ayuda de ShieldOps,
+            sufría intentos de fraude por correos falsos. Con la ayuda de ShieldOva,
             implementaron filtros básicos de ciberseguridad y capacitación a su personal.
           </p>
           <p className="text-gray-600 mb-4">

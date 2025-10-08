@@ -32,7 +32,7 @@ export default function PopupCTA() {
           Agenda tu demo gratuita
         </h3>
         <p className="text-gray-600 mb-6">
-          Descubre cómo ShieldOps puede proteger tu negocio en menos de 30 minutos.
+          Descubre cómo ShieldOva puede proteger tu negocio en menos de 30 minutos.
         </p>
         <a
           href="#contact"
