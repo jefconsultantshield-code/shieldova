@@ -1,0 +1,20 @@
+{
+  "ciberataques_colombia_pymes": {
+    "2023": {
+      "numero_estimado_ataques": "5000",
+      "tipos_ataque_mas_comunes": ["phishing", "ransomware", "malware"],
+      "sectores_mas_afectados": ["salud", "educación", "comercio"],
+      "consecuencias_principales": ["pérdida de datos", "reputación", "clientes"],
+      "porcentaje_empresas_afectadas": "30%",
+      "medidas_mitigacion_adoptadas": ["capacitación", "antivirus", "copias de seguridad"]
+    },
+    "2024": {
+      "numero_estimado_ataques": "6000",
+      "tipos_ataque_mas_comunes": ["phishing", "ransomware", "malware"],
+      "sectores_mas_afectados": ["salud", "educación", "comercio"],
+      "consecuencias_principales": ["pérdida de datos", "reputación", "clientes"],
+      "porcentaje_empresas_afectadas": "35%",
+      "medidas_mitigacion_adoptadas": ["capacitación", "antivirus", "copias de seguridad"]
+    }
+  }
+}

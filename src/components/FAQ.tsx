@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "¿Necesito un área de TI para usar ShieldOps?",
+    question: "¿Necesito un área de TI para usar ShieldOva?",
     answer:
       "No. Nuestras soluciones están diseñadas para ser implementadas fácilmente en pequeñas y medianas empresas sin necesidad de un equipo técnico especializado."
   },

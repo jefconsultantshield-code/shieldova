@@ -10,7 +10,7 @@ export default function Clients() {
           Clientes que confían en nosotros
         </h2>
         <p className="text-gray-600 mt-4">
-          Empresas de distintos sectores que aseguran sus operaciones con ShieldOps.
+          Empresas de distintos sectores que aseguran sus operaciones con ShieldOva.
         </p>
       </div>
 

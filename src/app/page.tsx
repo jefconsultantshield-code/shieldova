@@ -11,36 +11,39 @@ import Resources from "@/components/Resources";
 import Contact from "@/components/Contact";
 import ResourcesHighlight from "@/components/ResourcesHighlight";
 import Team from "@/components/Team";
-import SuccessStory from "@/components/SuccessStory"; // Importación del caso de éxito
-import FAQ from "@/components/FAQ";                   // Importación de preguntas frecuentes
-import Newsletter from "@/components/Newsletter";     // Importación del newsletter
-import PopupCTA from "@/components/PopupCTA";         // Importación del pop-up
+import SuccessStory from "@/components/SuccessStory";
+import FAQ from "@/components/FAQ";
+import Newsletter from "@/components/Newsletter";
+import Pricing from "@/components/Pricing";
+import PopupCTA from "@/components/PopupCTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div className="font-sans antialiased text-gray-900">
-      {/* Barra de navegación */}
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-32 px-6 text-center">
+      <section
+        id="inicio"
+        className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-32 px-6 text-center"
+      >
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            ShieldOps: Ciberseguridad para PYMEs
+            ShieldOva: Ciberseguridad para PYMEs
           </h1>
           <p className="mt-6 text-lg md:text-xl text-blue-100">
             Protege tu negocio con soluciones simples, efectivas y accesibles.
           </p>
           <div className="mt-8 flex justify-center space-x-4">
             <a
-              href="#solutions"
+              href="#soluciones"
               className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
             >
               Ver Soluciones
             </a>
             <a
-              href="#contact"
+              href="#contacto"
               className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition"
             >
               Contáctanos
@@ -49,50 +52,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Soluciones */}
-      <Solutions />
+      {/* Envolvemos cada sección con su id */}
+      <section id="soluciones" className="scroll-mt-24">
+        <Solutions />
+      </section>
 
-      {/* Testimonios */}
-      <Testimonials />
+      <section id="testimonios" className="scroll-mt-24">
+        <Testimonials />
+      </section>
 
-      {/* Partners (tecnológicos + aliados) */}
-      <Partners />
+      <section id="partners" className="scroll-mt-24">
+        <Partners />
+      </section>
 
-      {/* Clientes (PYMEs ficticias) */}
-      <Clients />
+      <section id="clientes" className="scroll-mt-24">
+        <Clients />
+      </section>
 
-      {/* Estadísticas de impacto */}
-      <Stats />
+      <section id="estadisticas" className="scroll-mt-24">
+        <Stats />
+      </section>
 
-      {/* Llamado a la acción con animación */}
-      <CTA />
+      <section id="cta" className="scroll-mt-24">
+        <CTA />
+      </section>
 
-      {/* Recursos dinámicos */}
-      <Resources />
+      <section id="recursos" className="scroll-mt-24">
+        <Resources />
+      </section>
 
-      {/* Contacto */}
-      <Contact />
+      <section id="contacto" className="scroll-mt-24">
+        <Contact />
+      </section>
 
-      {/* Recursos prácticos para PYMEs */}
-      <ResourcesHighlight />
+      <section id="resaltado" className="scroll-mt-24">
+        <ResourcesHighlight />
+      </section>
 
-      {/* Equipo de expertos */}
-      <Team />
+      <section id="equipo" className="scroll-mt-24">
+        <Team />
+      </section>
 
-      {/* Caso de éxito */}
-      <SuccessStory />   {/* 👈 Caso de éxito */}
+      <section id="caso-exito" className="scroll-mt-24">
+        <SuccessStory />
+      </section>
 
-      {/* Preguntas frecuentes */}
-      <FAQ />            {/* 👈 Preguntas frecuentes */}
+      <section id="faq" className="scroll-mt-24">
+        <FAQ />
+      </section>
 
-      {/* Newsletter */}
-      <Newsletter />      {/* 👈 Newsletter */}
+      <section id="newsletter" className="scroll-mt-24">
+        <Newsletter />
+      </section>
 
-      {/* Footer */}
+      <section id="planes" className="scroll-mt-24">
+        <Pricing />
+      </section>
+
       <Footer />
-
-      {/* Pop-up aparece sobre todo */}
-      <PopupCTA />        {/* 👈 Pop-up */}
+      <PopupCTA />
     </div>
   );
 }
