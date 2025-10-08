@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shieldops.vercel.app
+
+# Sitemaps
+Sitemap: https://shieldops.vercel.app/sitemap.xml

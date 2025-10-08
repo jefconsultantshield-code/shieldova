@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://shieldops.vercel.app
+Host: https://shieldova.vercel.app
 
 # Sitemaps
-Sitemap: https://shieldops.vercel.app/sitemap.xml
+Sitemap: https://shieldova.vercel.app/sitemap.xml
