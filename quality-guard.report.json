@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "apiCount": 0,
+    "appDir": false,
+    "pagesDir": true,
+    "hasRootPage": false
+  },
+  "package": {
+    "hasEslint": true,
+    "pkgName": "shieldova",
+    "hasNextSitemap": true,
+    "hasReact": true,
+    "hasTailwind": true,
+    "pkgVer": "1.0.0",
+    "scripts": {
+      "lint": "next lint",
+      "build": "next build",
+      "postbuild": "next-sitemap",
+      "dev": "next dev",
+      "start": "next start"
+    },
+    "hasNext": true
+  },
+  "noise": {
+    "packFilesCount": 11,
+    "mapsOutsideNextCount": 2998
+  },
+  "rootPath": "C:\\Users\\Andres Mauricio FQ\\shieldova",
+  "configs": [
+    {
+      "name": "next.config.js",
+      "exists": true,
+      "nonEmpty": true
+    },
+    {
+      "name": "tailwind.config.js",
+      "exists": true,
+      "nonEmpty": true
+    },
+    {
+      "name": "postcss.config.js",
+      "exists": true,
+      "nonEmpty": true
+    },
+    {
+      "name": "tsconfig.json",
+      "exists": true,
+      "nonEmpty": true
+    },
+    {
+      "name": "jsconfig.json",
+      "exists": true,
+      "nonEmpty": true
+    },
+    {
+      "name": "next-sitemap.config.js",
+      "exists": true,
+      "nonEmpty": true
+    },
+    {
+      "name": "eslint.config.mjs",
+      "exists": true,
+      "nonEmpty": true
+    }
+  ],
+  "generatedAt": "2025-10-08T09:21:10",
+  "env": {
+    "found": [],
+    "gitignoreHasEnv": true
+  },
+  "routes": {
+    "pagesDir": true,
+    "pagesApi": false,
+    "pagesApiFiles": [],
+    "pagesIndexJs": false,
+    "appApi": false,
+    "appDir": false,
+    "pagesIndexTs": false,
+    "appApiRoutes": [],
+    "appPage": false,
+    "appLayout": false
+  },
+  "recommendations": [
+    "**Rutas:** No hay página raíz detectada. Crear app/page.tsx (App Router) o pages/index.tsx (Pages Router).",
+    "**API:** No se detectan endpoints. Si tu sitio requiere backend, define pages/api/* o app/api/*/route.ts.",
+    "**.env:** No se detectan variables. Si usas keys, define .env.local y exclúyelo en .gitignore.",
+    "**Artefactos:**  sourcemaps fuera de .next. Considera moverlos o excluirlos.",
+    "**Artefactos:**  .pack detectados. Verifica si son necesarios y exclúyelos del repo si no."
+  ]
+}

@@ -1,0 +1,3 @@
+﻿Movido globals.css de src/app a app/
+Importacion en layout.tsx ya era correcta
+Validacion OK: globals.css existe en app/
